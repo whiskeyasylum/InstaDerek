@@ -28,7 +28,6 @@
     <list default="true" id="9b158ab1-5675-49ce-8ded-069744a6310e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
     </list>
     <ignored path="instaderek.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +54,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="1" selection-start="141" selection-end="141" vertical-scroll-proportion="0.17684211">
+            <state line="8" column="10" selection-start="193" selection-end="193" vertical-scroll-proportion="0.21428572">
               <folding />
             </state>
           </provider>
@@ -661,7 +660,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="141" selection-end="141" vertical-scroll-proportion="0.17684211">
+        <state line="8" column="10" selection-start="193" selection-end="193" vertical-scroll-proportion="0.21428572">
           <folding />
         </state>
       </provider>
