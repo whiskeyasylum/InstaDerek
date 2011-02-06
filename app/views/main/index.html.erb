@@ -1,5 +1,23 @@
+<%= content_for :js do -%>
+  <script>
+    jQuery(document).ready(function(){
+      jQuery('#gallery a').attr('rel', 'gallery').fancybox();
+      <%# jQuery('#gallery a').fancybox({ %>
+        <%# 'transitionIn'	:	'elastic', %>
+        <%# 'transitionOut'	:	'elastic', %>
+        <%# 'speedIn'		:	600,  %>
+        <%# 'speedOut'		:	200,  %>
+        <%# 'overlayShow'	:	true %>
+      <%# }); %>
+    });
+  </script>
+<% end -%>
+
 <%= link_to "See Derek's Instagr.am favorites", derekslists_path  %><br /><br />
 
-<%- @photos.each do |photo| -%>
-	<%= image_tag photo.image_url %>
-<%- end -%>
+
+<div id="gallery">
+  <%- @photos.each do |photo| -%>
+    <%= link_to image_tag(photo.image_url), photo.image_url(612) %>
+  <%- end -%>
+</div>
