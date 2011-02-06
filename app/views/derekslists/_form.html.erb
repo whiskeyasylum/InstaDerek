@@ -1,0 +1,25 @@
+<% @photos.each do |photo| %>
+<%= form_for(@derekslist) do |f| %>
+  <% if @derekslist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@derekslist.errors.count, "error") %> prohibited this derekslist from being saved:</h2>
+
+      <ul>
+      <% @derekslist.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+		<%= image_tag photo.image_url %>
+		<input type="hidden" name="derekslist[user_id]" value="<%= photo.user.id %>">
+		<input type="hidden" name="derekslist[photo_id]" value="<%= photo.id %>">
+    <%= f.label :comment %><br />
+    <%= f.text_area :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<% end %>

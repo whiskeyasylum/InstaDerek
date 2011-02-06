@@ -1,0 +1,4 @@
+<% @derekslists.each do |derekslist| %>
+	<%= image_tag derekslist.photo.image_url(612) %><br />
+	<%= derekslist.comment %><br />
+<% end %>

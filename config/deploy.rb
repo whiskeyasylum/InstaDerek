@@ -26,7 +26,6 @@ set :deploy_via, :remote_cache
 after "deploy:update_code", "deploy:symlink_config"
 after "deploy:symlink_config", "deploy:migrate"
 after "deploy", "deploy:cleanup"
-after "deploy:symlink", "deploy:update_crontab"
 
 deploy.task :symlink_config, :roles => :app, :except => {:no_release => true, :no_symlink => true} do
   run  <<-EOC

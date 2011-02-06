@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Photo:</b>
+  <%= @derekslist.photo_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @derekslist.user_id %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @derekslist.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_derekslist_path(@derekslist) %> |
+<%= link_to 'Back', derekslists_path %>

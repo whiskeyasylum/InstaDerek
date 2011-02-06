@@ -1,4 +1,6 @@
 Instaderek::Application.routes.draw do
+  resources :derekslists
+	resources :tags
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
