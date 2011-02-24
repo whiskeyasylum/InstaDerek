@@ -3,5 +3,5 @@
 development:
   adapter: mysql
   database: instaderek_development
-  username: root
-  password:
+  username: deploy
+  password: d3pl0y
