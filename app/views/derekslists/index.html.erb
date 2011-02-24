@@ -1,5 +1,5 @@
 <% @derekslists.each do |derekslist| %>
-    <%- unless derekslist.blank? -%>
+    <%- unless derekslist.blank? || derekslist.photo.blank? -%>
 	    <%= image_tag derekslist.photo.image_url(306) %><br />
 	    <%= derekslist.comment %><br />
     <%- end -%>
