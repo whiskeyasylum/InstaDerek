@@ -1,4 +1,6 @@
 <% @derekslists.each do |derekslist| %>
-	<%= image_tag derekslist.photo.image_url(306) %><br />
-	<%= derekslist.comment %><br />
+    <%- unless derekslist.blank? -%>
+	    <%= image_tag derekslist.photo.image_url(306) %><br />
+	    <%= derekslist.comment %><br />
+    <%- end -%>
 <% end %>
